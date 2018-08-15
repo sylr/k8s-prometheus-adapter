@@ -213,18 +213,21 @@
   version = "1.1.3"
 
 [[projects]]
-  branch = "master"
+  branch = "refactor/ease-of-use"
   name = "github.com/kubernetes-incubator/custom-metrics-apiserver"
   packages = [
     "pkg/apiserver",
     "pkg/apiserver/installer",
+    "pkg/cmd",
     "pkg/cmd/server",
     "pkg/dynamicmapper",
     "pkg/provider",
+    "pkg/provider/helpers",
     "pkg/registry/custom_metrics",
     "pkg/registry/external_metrics"
   ]
-  revision = "d8f23423aa1d0ff2bc9656da863d721725b3c68a"
+  revision = "54aa96d1f1f90bdc43239973e1ab5ab511dc7415"
+  source = "github.com/directxman12/custom-metrics-apiserver"
 
 [[projects]]
   branch = "master"
@@ -802,6 +805,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "922da691d7be0fa3bde2ab628c629fea6718792cb234a2e5c661a193f0545d6f"
+  inputs-digest = "d5b145633472acb178c62011ddb4a2f4cd2041af02bde81e166499b2b0e7a10b"
   solver-name = "gps-cdcl"
   solver-version = 1

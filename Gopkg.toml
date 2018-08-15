@@ -48,7 +48,8 @@
 
 # Kubernetes incubator deps
 [[constraint]]
-  version = "kubernetes-1.11.0-rc.1"
+  branch = "refactor/ease-of-use"
+  source = "github.com/directxman12/custom-metrics-apiserver"
   name = "github.com/kubernetes-incubator/custom-metrics-apiserver"
 
 # Core Kubernetes deps
