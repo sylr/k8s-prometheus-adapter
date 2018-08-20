@@ -52,26 +52,36 @@
   source = "github.com/directxman12/custom-metrics-apiserver"
   name = "github.com/kubernetes-incubator/custom-metrics-apiserver"
 
+[[constraint]]
+  name = "github.com/kubernetes-incubator/metrics-server"
+  branch = "refactor/ensure-separate-deps"
+  source = "github.com/directxman12/metrics-server"
+
 # Core Kubernetes deps
 [[constraint]]
   name = "k8s.io/api"
-  version = "kubernetes-1.11.0-rc.1"
+  version = "kubernetes-1.11.0"
 
 [[constraint]]
   name = "k8s.io/apimachinery"
-  version = "kubernetes-1.11.0-rc.1"
+  version = "kubernetes-1.11.0"
 
 [[constraint]]
   name = "k8s.io/apiserver"
-  version = "kubernetes-1.11.0-rc.1"
+  version = "kubernetes-1.11.0"
 
 [[constraint]]
   name = "k8s.io/client-go"
-  version = "kubernetes-1.11.0-rc.1"
+  version = "kubernetes-1.11.0"
 
 [[constraint]]
   name = "k8s.io/metrics"
-  version = "kubernetes-1.11.0-rc.1"
+  version = "kubernetes-1.11.0"
+
+# messed up kubernetes dep
+[[override]]
+  name = "github.com/json-iterator/go"
+  version = "1.1.5"
 
 # Test deps
 [[constraint]]
